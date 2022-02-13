@@ -5,7 +5,12 @@ import (
 )
 
 func main() {
-	sum(2, 11)
+  fmt.Println("Введите значения границы диапазона:")
+  var start, end int
+  fmt.Scan(&start)
+  fmt.Scan(&end)
+  
+	sum(start, end)
 }
 
 func sum(start, end int) {
